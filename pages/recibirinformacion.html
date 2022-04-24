@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="clientData">
+        <form id="enterClientData" class="clientDataForm" action="">
+            <section class="clientData__input">
+                <input type="user" class="form__control" id="user" placeholder="Ingrese nombre y apellido">
+                <label for="user">Nombre y apellido</label>
+                <input type="email" class="form__control" id="email" placeholder="email@email.com">
+                <label for="email">Ingrese su email</label>
+            </section>
+            <section class="carData">
+                <label for="carManufacter">Elija la marca de su vehículo</label>
+                <select name="carManufacter" id="carManufacter">
+                    <option value="toyota">Toyota</option>
+                    <option value="ford">Ford</option>
+                    <option value="volkswagen">Volkswagen</option>
+                </select>
+                <label for="carModel">Elija su vehículo</label>
+                <select name="carModel" id="carModel"></select>
+            </section>
+            <button class="submitButton" id="enterData" type="submit">Recibir mail con información.</button>
+            <button class="deleteButton" id="eraseData" type="reset">Borrar mis datos.</button>
+        </form>
+
+    </section>
+
+    <section>
+        <form id="clientWishForm" action="">
+            <section class="clientWishSection">
+                <p>Busque información adicional sobre cualquier vehículo que desee.</p>
+                <label for="manufacterWanted">Elija la marca sobre la que desea obtener información</label>
+                <select name="manufacterOption" id="manufacterOption">
+                    <option value="fiat">Fiat</option>
+                    <option value="chevrolet">Chevrolet</option>
+                    <option value="peugeot">Peugeot</option>
+                </select>
+                <button class="searchBtn" id="searchButton" type="submit">Buscar</button>
+            </section>
+        </form>
+        <section id="cardCar"></section>
+    </section>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/miarchivo.js"></script>
+</body>
+</html>
