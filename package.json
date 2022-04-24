@@ -1,0 +1,25 @@
+{
+  "name": "overvalue",
+  "version": "1.0.0",
+  "description": "This is a fictional page that I made while learning javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-patch scss scss/style.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeronimoValeiras/OverValue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeronimoValeiras/OverValue/issues"
+  },
+  "homepage": "https://github.com/GeronimoValeiras/OverValue#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
