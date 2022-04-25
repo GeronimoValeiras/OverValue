@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mi primer página con Javascript, simulando consecionario">  
+    <meta name="keywords" content="consecionario, HTML, CSS, BOOTSTRAP, NODEJS, Javascript, autos">
     <link rel="stylesheet" href="./css/main.css">
     <title>OverValue</title>
 </head>
 <body>
-    <header>
-        <section>
-            <img src="./images/banner-consecionario.jpeg" alt="banner">
-            <h1>OverValue</h1>
-            <h2>Consecionario Multimarca</h2>
-            <nav>
-                <ul>
-                    <li><a href="./index.html"></a>Quiénes Somos</li>
-                    <li><a href="./pages/galeria.html">Galería</a></li>
-                    <li><a href="./pages/recibirinformacion.html">Recibir Información</a></li>
-                </ul>
-            </nav>
+    <header class="header">
+        <section class="header__banner">
+            <img src="./images/banner-consecionario.jpeg" alt="banner" id="img-banner">
         </section>
+        <h1 class="header__tittle">OverValue</h1>
+        <h2 class="header__subtittle">Consecionario Multimarca</h2>
+        <nav class="header__navbar">
+            <ul class="header__navbar__list">
+                <li class="header__navbar__list__item"><a href="./index.html">Quiénes Somos</a></li>
+                <li class="header__navbar__list__item"><a href="./pages/galeria.html">Galería</a></li>
+                <li class="header__navbar__list__item"><a href="./pages/recibirinformacion.html">Recibir Información</a></li>
+            </ul>
+        </nav>
     </header>
     
-    <main>
-        <p>Somos un consecionario lider especializado en cuidar nuestro dinero. Ofrecemos las mejores opciones del mercado al precio más conveniente.</p>
-        <aside><img src="./images/consecionario-aside.jpg" alt="aside"></aside>
+    <main class="iprincipal">
+        <section class="iprincipal__text"><p>Somos un consecionario lider especializado en cuidar nuestro dinero. Ofrecemos las mejores opciones del mercado al precio más conveniente.</p></section>
+        <aside class="iprincipal__image"><img src="./images/consecionario-aside.jpg" alt="aside" id="img-aside"></aside>
     </main>
 
     <footer>

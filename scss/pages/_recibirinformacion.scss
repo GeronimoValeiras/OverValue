@@ -1,0 +1,56 @@
+.clientData {
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    label {
+        color: map-get($paletacolores, colorsecundario);
+        margin-bottom: 10px;
+    }
+
+    input {
+        background-color: map-get($paletacolores, colorhover);
+        color: map-get($paletacolores, colorprincipal);
+        border-style: none;
+        margin-bottom: 10px;
+    }
+
+    select {
+        margin-bottom: 10px;
+    }
+
+    &__form {
+
+        .submitButton {
+            color: map-get($paletacolores, colorsecundario);
+            background-color: map-get($paletacolores, colorprincipal);
+            border-color: solid map-get($paletacolores, colorsecundario);
+            border-radius: 5px;
+            border-style: none;
+            padding: 2px;
+
+            &:hover {
+                background-color: map-get($paletacolores, colorhover);
+            }
+        }
+
+        .deleteButton {
+            color: map-get($paletacolores, colorprincipal);
+            background-color: map-get($paletacolores, colorsecundario);
+            border-color: solid map-get($paletacolores, colorsecundario);
+            border-radius: 5px;
+            border-style: none;
+            padding: 2px;
+
+            &:hover {
+                background-color: map-get($paletacolores, colorhover);
+            }
+        }
+
+        &__input {
+            @include flexbox (column, nowrap, space-around, left);
+        }
+    }
+}

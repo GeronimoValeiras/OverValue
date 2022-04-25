@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+.header {
+  width: 100%;
+  height: 100px; }
+  .header__banner {
+    background-size: contain; }
+  .header__tittle {
+    position: absolute;
+    top: 0;
+    right: 50%; }
+  .header__subtittle {
+    position: absolute;
+    top: 5%;
+    left: 35%; }
+  .header__navbar__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1c61e2;
+    color: #ffffff; }
+
+#img-banner {
+  display: block;
+  max-width: 100vw;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+  object-fit: contain; }
+
+footer {
+  position: absolute;
+  bottom: 0; }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+
+.iprincipal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 40%; }
+  .iprincipal__text {
+    width: 30%;
+    font-size: 42px;
+    border: solid #1c61e2;
+    border-radius: 5px;
+    padding: 10px; }
+
+.galeria__principal {
+  position: absolute;
+  top: 25%; }
+  .galeria__principal__form__filter {
+    color: #1c61e2; }
+    .galeria__principal__form__filter .submitButton {
+      color: #1c61e2;
+      background-color: #ffffff;
+      border-color: solid #1c61e2;
+      border-radius: 5px;
+      border-style: none;
+      padding: 2px; }
+      .galeria__principal__form__filter .submitButton:hover {
+        background-color: #6f9ef6; }
+    .galeria__principal__form__filter .deleteButton {
+      color: #ffffff;
+      background-color: #1c61e2;
+      border-color: solid #1c61e2;
+      border-radius: 5px;
+      border-style: none;
+      padding: 2px; }
+      .galeria__principal__form__filter .deleteButton:hover {
+        background-color: #6f9ef6; }
+
+.clientData {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .clientData label {
+    color: #1c61e2;
+    margin-bottom: 10px; }
+  .clientData input {
+    background-color: #6f9ef6;
+    color: #ffffff;
+    border-style: none;
+    margin-bottom: 10px; }
+  .clientData select {
+    margin-bottom: 10px; }
+  .clientData__form .submitButton {
+    color: #1c61e2;
+    background-color: #ffffff;
+    border-color: solid #1c61e2;
+    border-radius: 5px;
+    border-style: none;
+    padding: 2px; }
+    .clientData__form .submitButton:hover {
+      background-color: #6f9ef6; }
+  .clientData__form .deleteButton {
+    color: #ffffff;
+    background-color: #1c61e2;
+    border-color: solid #1c61e2;
+    border-radius: 5px;
+    border-style: none;
+    padding: 2px; }
+    .clientData__form .deleteButton:hover {
+      background-color: #6f9ef6; }
+  .clientData__form__input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: left; }

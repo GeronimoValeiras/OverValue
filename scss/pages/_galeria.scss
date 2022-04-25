@@ -1,0 +1,38 @@
+.galeria__principal {
+    position: absolute;
+    top: 25%;
+
+    &__form {
+
+        &__filter {
+            color: map-get($paletacolores, colorsecundario);
+
+            .submitButton {
+                color: map-get($paletacolores, colorsecundario);
+                background-color: map-get($paletacolores, colorprincipal);
+                border-color: solid map-get($paletacolores, colorsecundario);
+                border-radius: 5px;
+                border-style: none;
+                padding: 2px;
+
+                &:hover {
+                    background-color: map-get($paletacolores, colorhover);
+                }
+            }
+
+            .deleteButton {
+                color: map-get($paletacolores, colorprincipal);
+                background-color: map-get($paletacolores, colorsecundario);
+                border-color: solid map-get($paletacolores, colorsecundario);
+                border-radius: 5px;
+                border-style: none;
+                padding: 2px;
+
+                &:hover {
+                    background-color: map-get($paletacolores, colorhover);
+                }
+            }
+        }
+        
+    }
+}

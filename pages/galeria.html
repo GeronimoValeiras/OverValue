@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mi primer página con Javascript, simulando consecionario">  
+    <meta name="keywords" content="consecionario, HTML, CSS, BOOTSTRAP, NODEJS, Javascript, autos">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>OverValue</title>
+</head>
+<body>
+    <header class="header">
+        <section class="header__banner">
+            <img src="../images/banner-consecionario.jpeg" alt="banner" id="img-banner">
+        </section>
+        <h1 class="header__tittle">OverValue</h1>
+        <h2 class="header__subtittle">Consecionario Multimarca</h2>
+        <nav class="header__navbar">
+            <ul class="header__navbar__list">
+                <li class="header__navbar__list__item"><a href="../index.html">Quiénes Somos</a></li>
+                <li class="header__navbar__list__item"><a href="../pages/galeria.html">Galería</a></li>
+                <li class="header__navbar__list__item"><a href="../pages/recibirinformacion.html">Recibir Información</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="galeria__principal">
+        <form id="" class="galeria__principal__form" action="">
+            <section class="carData galeria__principal__form__filter">
+                <label for="carManufacter">Elija la marca de su vehículo</label>
+                <select name="carManufacter" id="carManufacter">
+                    <option value="toyota">Toyota</option>
+                    <option value="ford">Ford</option>
+                    <option value="volkswagen">Volkswagen</option>
+                </select>
+                <label for="carModel">Elija su vehículo</label>
+                <select name="carModel" id="carModel"></select>
+                <button class="submitButton" id="enterData" type="submit">Aplicar filtro</button>
+                <button class="deleteButton" id="eraseData" type="reset">Reset</button>
+            </section>
+            
+        </form>    
+    </main>
+
+    <footer>
+        <ul>
+            <li><img src="" alt="FbIcon"></li>
+            <li><img src="" alt="WspIcon"></li>
+            <li><img src="" alt="IgIcon"></li>
+        </ul>
+    </footer>
+    
+</body>
+</html>

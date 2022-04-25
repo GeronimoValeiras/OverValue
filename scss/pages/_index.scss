@@ -1,0 +1,13 @@
+.iprincipal {
+    @include flexbox (row, nowrap, space-around, center);
+    position: absolute;
+    top: 40%;
+
+    &__text {
+        width: 30%;
+        font-size: 42px;
+        border: solid map-get($paletacolores, colorsecundario);
+        border-radius: 5px;
+        padding: 10px;
+    }
+}
