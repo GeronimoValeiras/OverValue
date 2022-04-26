@@ -1,164 +1,170 @@
 const autos [
     {
         "marca": "toyota",
-        "modelo": "etios",
-        "version": "aibo",
-        "precio": 1500000,
-    },
-    {
-        "marca": "toyota",
-        "modelo": "etios",
-        "version": "x",
-        "precio": 1800000,
-    },
-    {
-        "marca": "toyota",
-        "modelo": "etios",
-        "version": "xls",
-        "precio": 2500000,
-    },
-    {
-        "marca": "toyota",
-        "modelo": "corolla",
-        "version": "xli",
-        "precio": 2500000,
-    },
-    {
-        "marca": "toyota",
-        "modelo": "corolla",
-        "version": "xei",
-        "precio": 2800000,
-    },
-    {
-        "marca": "toyota",
-        "modelo": "corolla",
-        "version": "seg",
-        "precio": 3500000,
-    },
-    {
-        "marca": "toyota",
-        "modelo": "hilux",
-        "version": "cc dx",
-        "precio": 3500000,
-    },
-    {
-        "marca": "toyota",
-        "modelo": "hilux",
-        "version": "dc dx",
-        "precio": 3800000,
-    },
-    {
-        "marca": "toyota",
-        "modelo": "hilux",
-        "version": "dc sr",
-        "precio": 4500000,
-    },
-    {
-        "marca": "ford",
-        "modelo": "ka",
-        "version": "s",
-        "precio": 1500000,
-    },
-    {
-        "marca": "ford",
-        "modelo": "ka",
-        "version": "se",
-        "precio": 1800000,
-    },
-    {
-        "marca": "ford",
-        "modelo": "ka",
-        "version": "sel",
-        "precio": 2500000,
-    },
-    {
-        "marca": "ford",
-        "modelo": "focus",
-        "version": "se",
-        "precio": 2500000,
-    },
-    {
-        "marca": "ford",
-        "modelo": "focus",
-        "version": "sel+",
-        "precio": 2800000,
-    },
-    {
-        "marca": "ford",
-        "modelo": "focus",
-        "version": "titanium",
-        "precio": 3500000,
-    },
-    {
-        "marca": "ford",
-        "modelo": "ranger",
-        "version": "xl",
-        "precio": 3500000,
-    },
-    {
-        "marca": "ford",
-        "modelo": "ranger",
-        "version": "xlt",
-        "precio": 3800000,
-    },
-    {
-        "marca": "ford",
-        "modelo": "ranger",
-        "version": "limited",
-        "precio": 4500000,
-    },
-    {
-        "marca": "volkswagen",
-        "modelo": "gol",
-        "version": "trendline",
-        "precio": 1500000,
-    },
-    {
-        "marca": "volkswagen",
-        "modelo": "gol",
-        "version": "trendline at",
-        "precio": 1800000,
-    },
-    {
-        "marca": "volkswagen",
-        "modelo": "gol",
-        "version": "highline",
-        "precio": 2500000,
-    },
-    {
-        "marca": "volkswagen",
-        "modelo": "polo",
-        "version": "msi",
-        "precio": 2500000,
-    },
-    {
-        "marca": "volkswagen",
-        "modelo": "polo",
-        "version": "highline",
-        "precio": 2800000,
-    },
-    {
-        "marca": "volkswagen",
-        "modelo": "polo",
-        "version": "gts",
-        "precio": 3500000,
-    },
-    {
-        "marca": "volkswagen",
-        "modelo": "amarok",
-        "version": "trendline",
-        "precio": 3500000,
-    },
-    {
-        "marca": "volkswagen",
-        "modelo": "amarok",
-        "version": "comfortline",
-        "precio": 3800000,
-    },
-    {
-        "marca": "volkswagen",
-        "modelo": "amarok",
-        "version": "highline",
-        "precio": 4500000,
-    },
+        "modelos": [
+            {
+                "nombre-modelo": "etios",
+                "versiones": [
+            {
+                "version-modelo": "aibo",
+                "precio": 15000000,
+            },
+            {
+                "version-modelo": "x",
+                "precio": 1800000,
+            },
+            {
+                "version-modelo": "xls",
+                "precio": 2500000,
+            },
+        ]
+            },
+            {
+                "nombre-modelo": "corolla",
+                "versiones": [
+            {
+                "version-modelo": "xli",
+                "precio": 25000000,
+            },
+            {
+                "version-modelo": "xei",
+                "precio": 2800000,
+            },
+            {
+                "version-modelo": "seg",
+                "precio": 3500000,
+            },
+        ]
+            },
+            {
+                "nombre-modelo": "hilux",
+                "versiones": [
+            {
+                "version-modelo": "cc dx",
+                "precio": 35000000,
+            },
+            {
+                "version-modelo": "dc dx",
+                "precio": 3800000,
+            },
+            {
+                "version-modelo": "dc sr",
+                "precio": 4500000,
+            },
+        ]
+            },    
+    ]
+},
+{
+    "marca": "ford",
+    "modelos": [
+        {
+            "nombre-modelo": "ka",
+            "versiones": [
+        {
+            "version-modelo": "s",
+            "precio": 15000000,
+        },
+        {
+            "version-modelo": "se",
+            "precio": 1800000,
+        },
+        {
+            "version-modelo": "sel",
+            "precio": 2500000,
+        },
+    ]
+        },
+        {
+            "nombre-modelo": "focus",
+            "versiones": [
+        {
+            "version-modelo": "se",
+            "precio": 25000000,
+        },
+        {
+            "version-modelo": "sel+",
+            "precio": 2800000,
+        },
+        {
+            "version-modelo": "titanium",
+            "precio": 3500000,
+        },
+    ]
+        },
+        {
+            "nombre-modelo": "ranger",
+            "versiones": [
+        {
+            "version-modelo": "xl",
+            "precio": 35000000,
+        },
+        {
+            "version-modelo": "xlt",
+            "precio": 3800000,
+        },
+        {
+            "version-modelo": "limited",
+            "precio": 4500000,
+        },
+    ]
+        },    
+]
+},
+{
+    "marca": "volkswagen",
+    "modelos": [
+        {
+            "nombre-modelo": "gol",
+            "versiones": [
+        {
+            "version-modelo": "trendline",
+            "precio": 15000000,
+        },
+        {
+            "version-modelo": "trendline at",
+            "precio": 1800000,
+        },
+        {
+            "version-modelo": "highline",
+            "precio": 2500000,
+        },
+    ]
+        },
+        {
+            "nombre-modelo": "polo",
+            "versiones": [
+        {
+            "version-modelo": "msi",
+            "precio": 25000000,
+        },
+        {
+            "version-modelo": "highline",
+            "precio": 2800000,
+        },
+        {
+            "version-modelo": "gts",
+            "precio": 3500000,
+        },
+    ]
+        },
+        {
+            "nombre-modelo": "amarok",
+            "versiones": [
+        {
+            "version-modelo": "trendline",
+            "precio": 35000000,
+        },
+        {
+            "version-modelo": "comfortline",
+            "precio": 3800000,
+        },
+        {
+            "version-modelo": "highline",
+            "precio": 4500000,
+        },
+    ]
+        },    
+]
+},
 ];
