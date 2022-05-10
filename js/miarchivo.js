@@ -9,39 +9,62 @@ const galeria = document.getElementById('carGalery');
 
 
 aplicarFiltro.addEventListener('click', () => {
-    traerAutos();
+    createHTML(filtrarMarca(array));
 })
-async function traerAutos() {
-    const response = await fetch('./data.json')
-    const data = await response.json();
-    createHTML(filtrarMarca(data))
-}
 
 function filtrarMarca(array) {
     let marca = carManufacterBtn.value;
     if (!marca) {
         return array;
     } else {
-        result = array.filter((e) => e.marca == marca);
+        result = array.filter((e) => e.marcas.nombre == marca);
         return result;
     }
 }
 
 function createHTML(array) {
+    fetch ('../data.json')
+    .then ((response) => response.json())
+    .then ((data) => {
     galeria.innerHTML = ''
-    array.forEach((auto) => {
+    array.forEach((array) => {
         const card = `
         <div>
-        <h3>${auto.marcas.nombre}</h3>
-        <h4>${auto.marcas.nombre}</h4>
-        <h5>${auto.marcas.modelos.nombre-modelo}</h5>
-        <h5>${auto.marcas.modelos.versiones.version-modelo}</h5>
-        <h5>${auto.marcas.modelos.versiones.precio}</h5>
+        <h3>${marcas.nombre}</h3>
+        <h4>${marcas.nombre}</h4>
+        <h5>${marcas.modelos.nombreModelo}</h5>
+        <h5>${marcas.modelos.versiones.versionModelo}</h5>
+        <h5>${marcas.modelos.versiones.precio}</h5>
         <hr/>
         </div>`;
         galeria.innerHTML += card
     })
+})
 }
+
+function galeriaInicial (array){
+    fetch ('../data.json')
+    .then ((response) => response.json())
+    .then ((data) => {
+        console.log (data);
+        console.log (data.marcas);
+        galeria.innerHTML = ''
+       array.forEach((marcas) => {
+            const card = `
+        <div>
+        <h3>${marcas.nombre}</h3>
+        <h4>${marcas.nombre}</h4>
+        <h5>${marcas.modelos.nombreModelo}</h5>
+        <h5>${marcas.modelos.versiones.versionModelo}</h5>
+        <h5>${marcas.modelos.versiones.precio}</h5>
+        <hr/>
+        </div>`;
+        galeria.innerHTML += card
+        });
+    })
+}
+
+window.onload = galeriaInicial();
 
 
 //Card de recibir información
