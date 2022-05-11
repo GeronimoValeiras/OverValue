@@ -81,6 +81,20 @@ footer {
       .galeria__principal__form__filter .deleteButton:hover {
         background-color: #6f9ef6; }
 
+#carGalery {
+  position: relative;
+  top: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.aCar {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
 .clientData {
   position: absolute;
   top: 30%;

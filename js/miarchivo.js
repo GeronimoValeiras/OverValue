@@ -33,11 +33,11 @@ function createHTML(array) {
     galeria.innerHTML = ''
     array.forEach((auto) => {
         const card = `
-        <div>
+        <div class="aCar">
         <h3>${auto.marca}</h3>
         <h4>${auto.modelos}</h4>
-        <h5>${auto.precio}</h5>
-        <div><img src="..${auto.imagen}"></div>
+        <h5>$${auto.precio}</h5>
+        <div><img src=".${auto.imagen}"></div>
         </div>`
         galeria.innerHTML += card
     })
