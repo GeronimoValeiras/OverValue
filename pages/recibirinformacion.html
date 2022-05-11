@@ -28,8 +28,8 @@
     <section class="clientData">
         <form id="enterClientData" class="clientData__form" action="">
             <section class="clientData__form__input">
-                <label for="name">Nombre</label>
-                <input type="name" class="form__control" id="name" placeholder="Ingrese nombre y apellido">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form__control" id="nombre" placeholder="Ingrese nombre y apellido">
                 <label for="lastname">Apellido</label>
                 <input type="lastname" class="form__control" id="lastname" placeholder="Ingrese nombre y apellido">
                 <label for="email">Ingrese su email</label>
@@ -37,21 +37,20 @@
             </section>
             <section class="clientData__form__carData">
                 <label for="carManufacterCliente">Elija la marca de su vehículo</label>
-                <select name="carManufacterClient" id="carManufacterCliente">
-                    <option value="toyota">Toyota</option>
-                    <option value="ford">Ford</option>
-                    <option value="volkswagen">Volkswagen</option>
+                <select name="carManufacterCliente" id="carManufacterCliente">
+                    <option value="">Todas</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Volkswagen">Volkswagen</option>
                 </select>
             </section>
+            <button id="aplicarFiltro">Aplicar filtro</button>
             <button class="submitButton" id="enterDato" type="submit">Recibir mail con información.</button>
             <button class="deleteButton" id="eraseDato" type="reset">Borrar mis datos.</button>
         </form>
-        <aside>
-            <img src="" alt="autoseleccionado">
-        </aside>
     </section>
 
-    <section class="clientCard">
+    <section class="clientCard" id="carGalery">
 
     </section>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
