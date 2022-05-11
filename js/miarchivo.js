@@ -118,7 +118,6 @@ enterData.addEventListener('click', () => {
         <h5>${email.value}</h5>
         <h5>${carManufacterClient.value}</h5>
         <h5>${carModelClient.value}</h5>
-        <hr/>
         </div>`;
         galeria.innerHTML += cardCliente
 
