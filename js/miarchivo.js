@@ -1,80 +1,56 @@
 
 //Filtro en galería
 
-const carManufacterBtn = document.getElementById('carManufacterer');
-const carModelBtn = document.getElementById('carModel');
-const aplicarFiltro = document.getElementById('enterData');
-const borrarFiltro = document.getElementById('eraseData');
-const galeria = document.getElementById('carGalery');
+const carManufacterBtn = document.querySelector('#carManufacter');
+const carModelBtn = document.querySelector('#carModel');
+const aplicarFiltro = document.querySelector('#enterData');
+const borrarFiltro = document.querySelector('#eraseData');
+const galeria = document.querySelector('#carGalery');
+
 
 
 aplicarFiltro.addEventListener('click', () => {
-    createHTML(filtrarMarca(array));
+    cargarAutos();
 })
+async function cargarAutos() {
+    const respuesta = await fetch('../data.json')
+    const data = await respuesta.json();
+    createHTML(filtrarMarca(data))
+}
 
 function filtrarMarca(array) {
     let marca = carManufacterBtn.value;
     if (!marca) {
         return array;
     } else {
-        result = array.filter((e) => e.marcas.nombre == marca);
+        result = array.filter((e) => e.marca == marca);
         return result;
     }
 }
 
 function createHTML(array) {
-    fetch ('../data.json')
-    .then ((response) => response.json())
-    .then ((data) => {
     galeria.innerHTML = ''
-    array.forEach((array) => {
+    array.forEach((auto) => {
         const card = `
         <div>
-        <h3>${marcas.nombre}</h3>
-        <h4>${marcas.nombre}</h4>
-        <h5>${marcas.modelos.nombreModelo}</h5>
-        <h5>${marcas.modelos.versiones.versionModelo}</h5>
-        <h5>${marcas.modelos.versiones.precio}</h5>
-        <hr/>
-        </div>`;
+        <h3>${auto.marca}</h3>
+        <h4>${auto.modelos}</h4>
+        <h5>${auto.precio}</h5>
+        <div>${auto.imagen}</div>
+        </div>`
         galeria.innerHTML += card
     })
-})
 }
-
-function galeriaInicial (array){
-    fetch ('../data.json')
-    .then ((response) => response.json())
-    .then ((data) => {
-        console.log (data);
-        console.log (data.marcas);
-        galeria.innerHTML = ''
-       array.forEach((marcas) => {
-            const card = `
-        <div>
-        <h3>${marcas.nombre}</h3>
-        <h4>${marcas.nombre}</h4>
-        <h5>${marcas.modelos.nombreModelo}</h5>
-        <h5>${marcas.modelos.versiones.versionModelo}</h5>
-        <h5>${marcas.modelos.versiones.precio}</h5>
-        <hr/>
-        </div>`;
-        galeria.innerHTML += card
-        });
-    })
-}
-
-window.onload = galeriaInicial();
 
 
 //Card de recibir información
 
-const name = document.getElementById('name');
-const lastName = document.getElementById('lastname');
-const email = document.getElementById('email');
-const carManufacterClient = document.getElementById('carManufacterClient');
-const carModelClient = document.getElementById('carModelClient');
-const cardClient = document.getElementById('clientCard');
+const name = document.querySelector('#name');
+const lastName = document.querySelector('#lastname');
+const email = document.querySelector('#email');
+const carManufacterClient = document.querySelector('#carManufacterClient');
+const carModelClient = document.querySelector('#carModelClient');
+const cardClient = document.querySelector('#clientCard');
 
 class clienteAuto {
     constructor(name, lastName) {
@@ -82,21 +58,20 @@ class clienteAuto {
         this.lastName = lastName;
         this.email = email;
         this.carManufacterClient = carManufacterClient;
-        this.carModelClient = carModelClient;        
     }
 }
 
 function cargarCliente() {
-    const clientenuevo = new clienteAuto(name.value, lastName.value, email.value, carManufacterClient.value, carModelClient.value);
+    const clientenuevo = new clienteAuto(name.value, lastName.value, email.value, carManufacterClient.value);
     return clientenuevo;
 }
 
 function guardarClienteNuevoenStorage(clienteAuto) {
-    sessionStorage.setItem('clientenuevo', JSON.stringify(clienteAuto));
+    localStorage.setItem('clientenuevo', JSON.stringify(clienteAuto));
 }
 
 
-const enterData = document.querySelector("#enterData")
+const enterData = document.querySelector("#enterDato")
 
 enterData.addEventListener('click', () => {
     Swal.fire ({
@@ -117,14 +92,10 @@ enterData.addEventListener('click', () => {
         <h4>${lastName.value}</h4>
         <h5>${email.value}</h5>
         <h5>${carManufacterClient.value}</h5>
-        <h5>${carModelClient.value}</h5>
         </div>`;
         galeria.innerHTML += cardCliente
 
         } else if (result.isDenied) {
         Swal.fire('Vuelva cuando desee recibir información sobre un producto')
-        }
-    })
-    
-
-});
+        }})
+    });
