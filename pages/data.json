@@ -4,54 +4,54 @@
         "marca": "Toyota",
         "modelos": "etios",
         "precio": 150000,
-        "imagen": "./images/toyota-etios.jpeg"
+        "imagen": "../images/toyota-etios.jpeg"
     },
     {
         "marca": "Toyota",
         "modelos": "corolla",
         "precio": 250000,
-        "imagen": "./images/toyota-corolla.jpeg"
+        "imagen": "../images/toyota-corolla.jpeg"
     },
     {
         "marca": "Toyota",
         "modelos": "hilux",
         "precio": 350000,
-        "imagen": "./images/toyota-hilux.jpeg"
+        "imagen": "../images/toyota-hilux.jpeg"
     },
     {
         "marca": "Ford",
         "modelos": "ka",
         "precio": 150000,
-        "imagen": "./images/ford-ka.jpeg"
+        "imagen": "../images/ford-ka.jpeg"
     },
     {
         "marca": "Ford",
         "modelos": "focus",
         "precio": 250000,
-        "imagen": "./images/ford-focus.jpeg"
+        "imagen": "../images/ford-focus.jpeg"
     },
     {
         "marca": "Ford",
         "modelos": "ranger",
         "precio": 350000,
-        "imagen": "./images/ford-ranger.jpeg"
+        "imagen": "../images/ford-ranger.jpeg"
     },
     {
         "marca": "Volkswagen",
         "modelos": "gol",
         "precio": 150000,
-        "imagen": "./images/volkswagen-gol.jpeg"
+        "imagen": "../images/volkswagen-gol.jpeg"
     },
     {
         "marca": "Volkswagen",
         "modelos": "polo",
         "precio": 250000,
-        "imagen": "./images/volkswagen-polo.jpeg"
+        "imagen": "../images/volkswagen-polo.jpeg"
     },
     {
         "marca": "Volkswagen",
         "modelos": "amarok",
         "precio": 350000,
-        "imagen": "./images/volkswagen-amarok.jpeg"
+        "imagen": "../images/volkswagen-amarok.jpeg"
     }
 ]
